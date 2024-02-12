@@ -22,6 +22,7 @@ function getBtnText() {
 
 function startClicking() {
   clickTimer = setInterval(function() {
+    Game.lastClick -= 1000;
     Game.ClickCookie();
   }, 4);
 }
